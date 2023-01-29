@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './Header.module.css';
 import {BiMenuAltRight, BiPhoneCall} from 'react-icons/bi'
-// import { getMenuStyles, head } from '../../utils/motion';
+import { getMenuStyles, head } from '../../utils/motion';
 import { useState } from 'react';
 const Header = () => {
     const [menuOpened,setMenuOpened]=useState(false)
