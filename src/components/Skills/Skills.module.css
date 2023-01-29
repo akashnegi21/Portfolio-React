@@ -1,0 +1,216 @@
+
+.wrapper{
+    padding: 5rem 3rem;
+    background-color: #242634;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.left{
+    padding-left: 3rem;
+    flex: 1;
+    color: white;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+.leftText{
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+}
+.leftText:nth-child(1){
+    font-size: 2rem;
+    color: #858792;
+}
+.leftText>:nth-child(2){
+    font-size: 5rem;
+    color: white;
+    align-items: center;
+}
+.btn{
+    width: 15rem;
+    cursor: pointer;
+    margin-left: 2rem;
+    height:5rem;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #2a2c39;
+    border-radius: 4rem;
+}
+
+.right{
+    flex: 1;
+}
+.rightbox{
+    display: flex;
+    flex-direction: column;
+    gap:1.7rem;
+    color: #858792;
+}
+.progressDiv{
+    background-color: #2a2c39;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 2.5rem;
+}
+.skillDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skillDiv>span:nth-of-type(2){
+    padding-right: 1rem;
+}
+.outerProgressBar{
+background-color:#343a40;
+width: 100%;
+border-radius: 13rem;
+}
+.innerProgressBar{
+background-color: white;
+height: 13px;
+
+border-radius: 13rem;
+}
+
+@media(max-width:640px),
+(max-width:990px) {
+.container{
+    display: flex;
+    flex-direction: column;
+    font-size: auto;
+}
+.leftText:nth-child(1){
+    font-size: 1rem;
+    color: #858792;
+}
+.left{
+    padding-left: 0rem;
+    flex: 1;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+.leftText>:nth-child(2){
+    font-size: 3.4rem;
+    color: white;
+    align-items: center;
+}
+.btn{
+    margin-left: 0;
+    
+}
+}
+@media(max-width:500px){
+    .leftText{
+        gap: 1rem;
+        margin-left: -3.7rem;
+    }
+    .leftText:nth-child(1){
+        font-size: 1rem;
+        color: #858792;
+    }
+    .btn{
+        width: 14rem;
+        margin-left: -5rem;
+        height:4rem;
+        font-size: .8rem;
+        display: flex;
+        gap: .3rem;
+        padding :1.5rem 0rem;  
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #2a2c39;
+        border-radius: 2rem;
+    }
+    .left{
+        padding-left: 0rem;
+        flex: 1;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+    }
+    .leftText>:nth-child(2){
+        font-size: 1.8rem;
+        width: 100%;
+        color: white;
+        align-content: center;
+        justify-content:center;
+    }
+}
+
+@media(max-width:300px){
+    .leftText{
+        gap: 1rem;
+        margin-left: -3.7rem;
+    }
+    .btn{
+        width: 8rem;
+        margin-left:-2rem;
+
+        height:1.7rem;
+        display: flex;
+        gap: .3rem;
+        font-size: .7rem;
+        padding :.9rem 0rem;  
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #2a2c39;
+        border-radius: 2rem;
+    }
+    .leftText:nth-child(1){
+        font-size: .9rem;
+        color: #858792;
+    }
+    .leftText>:nth-child(2){
+        font-size: 1.3rem;
+        width: 100%;
+        color: white;
+        align-content: center;
+        justify-content:center;
+    }
+    .rightbox{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+        color: #858792;
+    }
+    .progressDiv{
+        background-color: #2a2c39;
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        border-radius: 1.5rem;
+    }
+    .skillDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: .6rem;
+    }
+    .skillDiv>span:nth-of-type(2){
+        padding-right: 0rem;
+    }
+    .outerProgressBar{
+    background-color:#343a40;
+    width: 100%;
+    border-radius:6rem;
+    }
+    .innerProgressBar{
+    background-color: white;
+    height: 4px;
+    
+    border-radius: 13rem;
+    }
+    
+}

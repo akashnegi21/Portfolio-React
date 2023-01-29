@@ -1,0 +1,147 @@
+.wrapper{
+    padding:1.5rem;
+    overflow: hidden;
+
+}
+.container{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.upper{
+display: flex;
+align-items: center;
+    justify-content: space-around   ;
+    flex-wrap: wrap;
+}
+.lower{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: space-around; 
+}   
+
+.person{
+    position: absolute;
+    bottom: -4rem;
+    left: 33%;
+    background-image: url('../splash.png');
+    background-repeat: no-repeat;
+    background-size: 23rem;
+}
+.email{
+    position: absolute;
+    top: 42%;
+    left: 16%;
+    border: 2px solid;
+    border-radius: 3rem;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    background-color: green;
+    text-decoration: none;
+    color:white;
+}
+.experience{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.experience>:nth-child(2){
+    line-height: 25px   ;
+}
+.certificate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.certificate>img{
+    margin-bottom: 1rem;
+    width: 3rem;
+}
+.primaryText{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.secondaryText{
+    line-height: 50px;
+  font-size: 1.3rem;
+  font-weight: 500
+}
+.primaryText1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.secondaryText1{
+    line-height: 50px;
+  font-size: 2.5rem;
+  font-weight: 500
+}
+
+@media(max-width:640px),
+(max-width:920px) {
+
+.upper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .8rem;
+    justify-content: center;
+}
+.email{
+    position: relative;
+    display: none;
+}
+
+.lower{
+margin-top:5rem;
+gap: 1rem;
+align-items: center;
+justify-content: center;
+}
+.person{
+    position: relative;
+    left: 0;
+    margin-top: -4rem;
+    background-size: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: bottom;
+}
+.certificate{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+}
+.certificate>img{
+    margin-bottom: 0rem;
+width: 3.1rem;
+}
+}
+@media(max-width:470px){
+    .person{
+        background-size: 15rem;
+    }
+    .certificate{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .certificate>img{
+        margin-bottom: 0rem;
+    width: 2.1rem;
+    padding: .3rem;
+
+    }
+    .upper{
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        }
+    .person>img{
+        width: 18rem;
+    }
+}

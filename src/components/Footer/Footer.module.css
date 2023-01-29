@@ -1,0 +1,185 @@
+.wrapper{
+    background: #2a2c39;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+padding: 4rem 1rem;
+}
+.left{
+    flex: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+.left>span{
+    display: flex;
+    font-size: 4rem;
+    font-weight: 600;
+}
+.left>div{
+    font-size: 2rem;
+    font-weight: 500;
+    border: 2px solid grey;
+    width: 21rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.right{
+    flex: .4;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.right >span{
+    font-size: 2.5rem;
+    font-weight: 500;
+    
+} 
+.menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.menu>li{
+    font-size: 1.4rem;
+}
+.line{
+    padding: 2rem 0rem;
+}
+.linewidth{
+height: 1px;
+margin: 0 6rem;
+background-color: aliceblue;
+
+}
+
+.footerText{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:600px),
+(max-width:975px) {
+.container{
+    flex-direction: column;
+    gap: 3rem;
+}
+.left{
+    gap: 2rem;
+}
+.left>span{
+    font-size: 3.5rem;
+}
+.left>div{
+    font-size: 1.5rem;
+    width: 16rem;
+    height: 3rem;
+    padding: 1.5rem;
+}
+.right{
+    gap: 1.3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2rem;
+}
+.right >span{
+    font-size: 2.3rem;
+    font-weight: 500;
+    
+} 
+}
+@media(max-width:500px){
+    .container{
+        gap: 1.5rem;
+    }
+    .left{
+        justify-content: center;
+        align-items: center;
+    }
+    .right{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .left>span{
+        font-size: 2rem;
+    }
+    .left>div{
+        font-size: .9rem;
+        width: 11rem;
+        height: 2rem;
+        padding: 1rem;
+    }
+    .right{
+        gap: .7rem;
+    }
+    .right >span{
+        font-size: 1.6rem;
+        font-weight: 500;
+        display: flex;
+    }
+    .menu{
+        gap: .7rem;
+    }
+    .menu>li{
+        font-size: 1rem;
+    }
+    .footerText>span{
+        font-size: .9rem;
+    }
+}
+@media(max-width:300px){
+    .container{
+        gap: 1.5rem;
+    }
+    .left{
+        justify-content: center;
+        align-items: center;
+    }
+    .right{
+        justify-content: center;
+      }
+    .left>span{
+        font-size: 1.5rem;
+    }
+    .left>div{
+        font-size: .7rem;
+        width: 8rem;
+       
+    }
+    .right{
+        gap: .7rem;;
+    }
+    .right >span{
+        font-size: 1.2rem;
+        display: flex;
+    
+        font-weight: 500;
+    }
+    .menu{
+        gap: .7rem;
+    }
+    .menu>li{
+        font-size: .8rem;
+    }
+    .footerText>span{
+        font-size: .6rem;
+    }
+}
